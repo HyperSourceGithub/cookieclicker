@@ -59,46 +59,51 @@
 
   <div class="sidebar-left">
     <p class="cooltext-bold">version: 1.0 STABLE</p>
-    <button type="button" class="collapsible">Changelogs [click to expand]</button>
-    <div class="content">
-      <p>
-      <p class="cooltext-bold">changelogs:</p>
-      <ul>
-        <li>vBeta1.0: Added "Click Me" button, cursors, and grandmas <br /></li>
-        <li>vBeta1.1: Added "Grandma Power" button <br /></li>
-        <li>vBeta1.2: Added Cookie image <br /></li>
-        <li>vBeta1.3: Added cheats (psst: to activate, press a key in the top left of your keyboard!) <br /></li>
-        <li>vBeta1.4: Added right sidebar and fixed some minor errors <br /></li>
-        <li>vBeta1.5: Added changelogs and left sidebar <br /></li>
-        <li>vBeta1.6: Fixed minor formatting bug, added Grandma and Cursor count under the Cookie count, and moved the "Run
-          on
-          Replit" button to show only on the <a href="credits.html">credits</a> page</li>
-        <li>vBeta1.7: Moved cheat codes to the left sidebar and fixed formatting bugs</li>
-        <li>vBeta1.8: Fixed minor formatting errors (they show up every time *sigh*), added new cheat codes, changed
-          cursor/grandma cost algorithm (they stay cheaper for longer!!!)</li>
-        <li>vBeta1.9: Enabled save and load functions</li>
-        <li>vBeta1.10: Fixed formatting bugs, changed cost algorithms, synced all fields when triggering load() function,
-          and added right-sidebar background</li>
-        <li>vBeta1.11: Added searchers</li>
-        <li>vBeta1.12: Added makers</li>
-        <li>vBeta1.13: Added "swap image" function</li>
-        <li>vBeta1.14: Changed background</li>
-        <li>vBeta1.14 <strong>Holidays</strong>: Added snow effect and christmas lights</li>
-        <li>vBeta1.15: Added changelogs dropdown</li>
-        <li>vBeta1.16: Added fancy buttons on the left sidebar and organized the files</li>
-        <li>vBeta1.17: Changed all buttons to be fancy, moved cheats to left sidebar, fixed sidebar height</li>
-        <li>vBeta1.18: Made minor edits to the CSS (YAYAYAYAYA FANCY)</li>
-        <li>vBeta1.19: Played around with some cookie images</li>
-        <li>vBeta1.20: Changed the CSS property "user-select" to "none" to prevent accidental item highlighting</li>
-        <li>vBeta1.21: ADDED SUGGESTIONS BUTTON!!!!!!!!!!!!</li>
-        <li>vBeta1.22: Added Universes</li>
-        <li>vBeta1.23: Game broke, time for damage recovery!!!</li>
-        <li>vBeta1.24: Fixed the game! :)</li>
-        <li>vBeta1.25: Added README, updated credits and connected to <a href="https://github.com/HyperSourceGithub/cookieclicker">GitHub</a></li>
-        <li>vBeta1.26: Removed christmas lights</li>
-        <li>vBeta1.27: Patched some stuff</li>
-        <li><strong>v1.0: STABLE RELEASE!!!!!! cookie.clicker has now exited beta!</strong></li>
-      </ul>
+    <div>
+
+      <button type="button" class="collapsible">Changelogs [click to expand]</button>
+      <div class="content">
+        <p class="cooltext-bold">changelogs:</p>
+        <ul id="changelog">
+          <li>vBeta1.0: Added "Click Me" button, cursors, and grandmas <br /></li>
+          <li>vBeta1.1: Added "Grandma Power" button <br /></li>
+          <li>vBeta1.2: Added Cookie image <br /></li>
+          <li>vBeta1.3: Added cheats (psst: to activate, press a key in the top left of your keyboard!) <br /></li>
+          <li>vBeta1.4: Added right sidebar and fixed some minor errors <br /></li>
+          <li>vBeta1.5: Added changelogs and left sidebar <br /></li>
+          <li>vBeta1.6: Fixed minor formatting bug, added Grandma and Cursor count under the Cookie count, and moved the
+            "Run
+            on
+            Replit" button to show only on the <a href="credits.html">credits</a> page</li>
+          <li>vBeta1.7: Moved cheat codes to the left sidebar and fixed formatting bugs</li>
+          <li>vBeta1.8: Fixed minor formatting errors (they show up every time *sigh*), added new cheat codes, changed
+            cursor/grandma cost algorithm (they stay cheaper for longer!!!)</li>
+          <li>vBeta1.9: Enabled save and load functions</li>
+          <li>vBeta1.10: Fixed formatting bugs, changed cost algorithms, synced all fields when triggering load()
+            function,
+            and added right-sidebar background</li>
+          <li>vBeta1.11: Added searchers</li>
+          <li>vBeta1.12: Added makers</li>
+          <li>vBeta1.13: Added "swap image" function</li>
+          <li>vBeta1.14: Changed background</li>
+          <li>vBeta1.14 <strong>Holidays</strong>: Added snow effect and christmas lights</li>
+          <li>vBeta1.15: Added changelogs dropdown</li>
+          <li>vBeta1.16: Added fancy buttons on the left sidebar and organized the files</li>
+          <li>vBeta1.17: Changed all buttons to be fancy, moved cheats to left sidebar, fixed sidebar height</li>
+          <li>vBeta1.18: Made minor edits to the CSS (YAYAYAYAYA FANCY)</li>
+          <li>vBeta1.19: Played around with some cookie images</li>
+          <li>vBeta1.20: Changed the CSS property "user-select" to "none" to prevent accidental item highlighting</li>
+          <li>vBeta1.21: ADDED SUGGESTIONS BUTTON!!!!!!!!!!!!</li>
+          <li>vBeta1.22: Added Universes</li>
+          <li>vBeta1.23: Game broke, time for damage recovery!!!</li>
+          <li>vBeta1.24: Fixed the game! :)</li>
+          <li>vBeta1.25: Added README, updated credits and connected to <a
+              href="https://github.com/HyperSourceGithub/cookieclicker">GitHub</a></li>
+          <li>vBeta1.26: Removed christmas lights</li>
+          <li>vBeta1.27: Patched some stuff</li>
+          <li><strong>v1.0: STABLE RELEASE!!!!!! cookie.clicker has now exited beta!</strong></li>
+        </ul>
+      </div>
     </div>
     <p><br /></p>
     <fancybutton class="tiny-button" onclick="save()">Save</fancybutton>
@@ -108,7 +113,8 @@
     <fancybutton class="tiny-button"><a href="credits.html">Credits </a></fancybutton>
     <fancybutton class="tiny-button" onclick="swapImage()">Swap Image</fancybutton>
     <div class="spacer"></div>
-    <fancybutton class="medium-button"><a href="https://forms.gle/8MYDNgLDQjr3VPsf8">Suggestions/Bug Reporting</a></fancybutton>
+    <fancybutton class="medium-button"><a href="https://forms.gle/8MYDNgLDQjr3VPsf8">Suggestions/Bug Reporting</a>
+    </fancybutton>
     <div class="spacer"></div>
     <!-- Cheat Codes go HERE -->
     <div class="cheatCodes" id="cheatCodes" style="display: none;">
@@ -126,7 +132,7 @@
 
     <h1 class="candycane">cookie.clicker</h1>
     <p>a game made by hyper studios</p>
-    <img id="click" src="Assets/cookie.png" onclick="cookieClick()" alt="Cookie" class="illustration">
+    <img id="click" src="Assets/cookie.png" onclick="cookieClick()" alt="Cookie" class="illustration" style="object-fit: cover; height: 250px;">
     <div class="stats">
       <p>Cookies: <span id="cookies">0</span></p>
       <p>Cursors: <span id="cursor-display">0</span></p>
