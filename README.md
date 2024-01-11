@@ -8,3 +8,7 @@ feel free to fork this on replit or get some code from the git, but __please cre
 also if you check the git, thats a surprising amount of CSS (probably outdated)
 <br/>
 ![lots of css](Assets/css+.jpg "css overload")
+
+# access link
+use [https://bit.ly/hyper-cookieclicker](https://bit.ly/hyper-cookieclicker) to access the game!
+(psst... i would have just given a repl.co link if replit hadn't made hosting paid...)
