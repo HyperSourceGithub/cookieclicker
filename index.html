@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>cookie.clicker</title>
+  <link rel="stylesheet" type="text/css" href="style.css"> <!-- Link to the style.css file -->
+  <link rel=icon href="Assets/cookie.png"> <!-- Link to the cookie.png file for the favicon -->
+</head>
+
+<body>
+  <div class="christmasLights"></div>
+  <div class="sidebar-right">
+    <p class="cooltext-bold">Items</p>
+
+    <!-- Cursors -->
+    <div class="tooltip">
+      <fancybutton class="tiny-button" onclick="buyCursor()">Buy Cursor</fancybutton>
+      <span class="tooltiptext">Cursor: Produces 2 CPS</span>
+    </div>
+    <p>Cursors: <span id="cursors">0</span></p>
+    <p>Cursor Cost: <span id="cursorCost">30</span></p>
+
+    <!-- Grandmas -->
+    <fancybutton class="tiny-button" onclick="buyGrandma()">Buy Grandma</fancybutton>
+    <p>Grandmas: <spn id="grandmas">0</span> </p>
+    <p>Grandma Cost: <span id="grandmaCost">200</span></p>
+    <div class="tooltip">
+      <fancybutton class="tiny-button" onclick="grandmaPower()">Grandma Power</fancybutton>
+      <span class="tooltiptext">Grandma Power: Each Grandma produces 4 Cookies per click of this button</span>
+    </div>
+    <p><br /></p>
+
+    <!-- Cookie Searchers -->
+    <div class="tooltip">
+      <fancybutton class="tiny-button" onclick="buySearcher()">Buy Searcher</fancybutton>
+      <span class="tooltiptext">Searcher: Produces 4 CPS</span>
+    </div>
+    <p>Cookie Searchers: <span id="searchers">0</span></p>
+    <p>Cookie Searcher Cost: <span id="searcherCost">250</span></p>
+
+    <!-- Cookie Makers -->
+    <div class="tooltip">
+      <fancybutton class="tiny-button" onclick="buyMaker()">Buy Maker</fancybutton>
+      <span class="tooltiptext">Maker: Produces 16 CPS</span>
+    </div>
+    <p>Cookie Makers: <span id="makers">0</span></p>
+    <p>Cookie Maker Cost: <span id="makerCost">800</span></p>
+
+    <!-- Space Cookies -->
+    <div class="tooltip">
+      <fancybutton class="tiny-button" onclick="buyUniverse()">Buy Universe</fancybutton>
+      <span class="tooltiptext">Universe: produces 30 CPS</span>
+    </div>
+    <p>Universes: <span id="universes">0</span></p>
+    <p>Universe Cost: <span id="universeCost">2,000</span></p>
+
+  </div>
+
+  <div class="sidebar-left">
+    <p class="cooltext-bold">version: 1.24 [Holidays mode: ON]</p>
+    <button type="button" class="collapsible">Changelogs [click to expand]</button>
+    <div class="content">
+      <p>
+      <p class="cooltext-bold">changelogs:</p>
+      <ul>
+        <li>v1.0: Added "Click Me" button, cursors, and grandmas <br /></li>
+        <li>v1.1: Added "Grandma Power" button <br /></li>
+        <li>v1.2: Added Cookie image <br /></li>
+        <li>v1.3: Added cheats (psst: to activate, press a key in the top left of your keyboard!) <br /></li>
+        <li>v1.4: Added right sidebar and fixed some minor errors <br /></li>
+        <li>v1.5: Added changelogs and left sidebar <br /></li>
+        <li>v1.6: Fixed minor formatting bug, added Grandma and Cursor count under the Cookie count, and moved the "Run
+          on
+          Replit" button to show only on the <a href="credits.html">credits</a> page</li>
+        <li>v1.7: Moved cheat codes to the left sidebar and fixed formatting bugs</li>
+        <li>v1.8: Fixed minor formatting errors (they show up every time *sigh*), added new cheat codes, changed
+          cursor/grandma cost algorithm (they stay cheaper for longer!!!)</li>
+        <li>v1.9: Enabled save and load functions</li>
+        <li>v1.10: Fixed formatting bugs, changed cost algorithms, synced all fields when triggering load() function,
+          and added right-sidebar background</li>
+        <li>v1.11: Added searchers</li>
+        <li>v1.12: Added makers</li>
+        <li>v1.13: Added "swap image" function</li>
+        <li>v1.14: Changed background</li>
+        <li>v1.14 <strong>Holidays</strong>: Added snow effect and christmas lights</li>
+        <li>v1.15: Added changelogs dropdown</li>
+        <li>v1.16: Added fancy buttons on the left sidebar and organized the files</li>
+        <li>v1.17: Changed all buttons to be fancy, moved cheats to left sidebar, fixed sidebar height</li>
+        <li>v1.18: Made minor edits to the CSS (YAYAYAYAYA FANCY)</li>
+        <li>v1.19: Played around with some cookie images</li>
+        <li>v1.20: Changed the CSS property "user-select" to "none" to prevent accidental item highlighting</li>
+        <li>v1.21: ADDED SUGGESTIONS BUTTON!!!!!!!!!!!!</li>
+        <li>v1.22: Added Universes</li>
+        <li>v1.23: Game broke, time for damage recovery!!!</li>
+        <li>v1.24: Fixed the game! :)</li>
+      </ul>
+    </div>
+    <p><br /></p>
+    <fancybutton class="tiny-button" onclick="save()">Save</fancybutton>
+    <fancybutton class="tiny-button" onclick="load()">Load</fancybutton>
+    <p class="tooltip"><br />To save: click "Save" <br />To load: click "Load" on the same device that you saved<br />
+    </p>
+    <fancybutton class="tiny-button"><a href="credits.html">Credits </a></fancybutton>
+    <fancybutton class="tiny-button" onclick="swapImage()">Swap Image</fancybutton>
+    <div class="spacer"></div>
+    <fancybutton class="medium-button"><a href="https://forms.gle/8MYDNgLDQjr3VPsf8">Suggestions/Bug Reporting</a></fancybutton>
+    <div class="spacer"></div>
+    <!-- Cheat Codes go HERE -->
+    <div class="cheatCodes" id="cheatCodes" style="display: none;">
+      <h2 class="cooltext">cheat.menu</h2>
+      <p class="cooltext">enter "help" for the codes!</p>
+      <p>refresh to hide.</p>
+      <div id="cheatInput" class="cheatInput">
+        <input type="text" placeholder="Enter cheat code" , id="cheatInputField">
+        <fancybutton class="tiny-button" onclick="applyCheat()">Apply</fancybutton>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+
+    <h1 class="candycane">cookie.clicker</h1>
+    <p>a game made by hyper studios</p>
+    <img id="click" src="Assets/cookie.png" onclick="cookieClick()" alt="Cookie" class="illustration">
+    <div class="stats">
+      <p>Cookies: <span id="cookies">0</span></p>
+      <p>Cursors: <span id="cursor-display">0</span></p>
+      <p>Grandmas: <span id="grandma-display">0</span> </p>
+      <p>Searchers: <span id="searcher-display">0</span></p>
+      <p>Makers: <span id="maker-display">0</span></p>
+      <p>Universes: <span id="universe-display">0</span></p>
+      <p>Cookies Per Second (CPS): <span id="cps">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+    <div id="snow"></div>
+  </div>
+</body>
+
+</html>
