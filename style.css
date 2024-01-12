@@ -219,7 +219,7 @@ h1 {
 
 .sidebar-right {
   margin: 0;
-  padding: 10px;
+  padding: 6px;
   width: 320px;
   float: right;
   align-self: right;
@@ -232,12 +232,12 @@ h1 {
   text-align: center;
   align-content: center;
   background-image: url("Assets/cookiebg.jpeg");
-  height: 700px;
+  height: 780px;
 }
 
 .sidebar-left {
   margin: 0;
-  padding: 10px;
+  padding: 6px;
   width: 320px;
   float: left;
   align-self: left;
@@ -249,7 +249,7 @@ h1 {
   text-align: center;
   align-content: center;
   background-image: url("Assets/cookiebg.jpeg");
-  min-height: 700px;
+  min-height: 780px;
 }
 
 #changelog{
