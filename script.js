@@ -218,11 +218,12 @@ document.addEventListener('keydown', function (event) {
 });
 
 function swapImage() {
-  imageindex +=1;
+  imageindex += 1;
   var imageDisplayed = document.getElementById('click');
   var imageNum = imageindex % imagesDisplayed.length;
   imageDisplayed.src = imagesDisplayed[imageNum];
 }
+
 
 window.onload = function () {
   var flakes = [];
