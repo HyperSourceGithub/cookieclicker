@@ -223,8 +223,9 @@ h1 {
   width: 320px;
   float: right;
   align-self: right;
-  overflow: scroll;
-  border: 3px solid #008cff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 3px solid #8d7152;
   border-radius: 15px;
   border-spacing: 5px;
   align-items: center;
@@ -240,8 +241,8 @@ h1 {
   width: 320px;
   float: left;
   align-self: left;
-  overflow: scroll;
-  border: 3px solid #008cff;
+  overflow-y: hidden;
+  border: 3px solid #8d7152;
   border-radius: 15px;
   border-spacing: 5px;
   align-items: center;
@@ -250,6 +251,41 @@ h1 {
   background-image: url("Assets/cookiebg.jpeg");
   min-height: 700px;
 }
+
+#changelog{
+  background-color: #ffffff69;
+  border-radius: 15px;
+  margin-top: 350px;
+  padding: 20px;
+}
+
+  /* Scrollbars CSS */
+  /* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #8d7152 #2e2e2e;
+    scrollbar-base-color: #2e2e2e;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 15px;
+    background-color: #2e2e2e;
+    border-radius: 15px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #2e2e2e;
+    border-radius: 15px;
+    border: none;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color:  #8d7152;
+    border-radius: 15px;
+    border: none;
+}
+
 
 p.cooltext {
   font-family: 'Roboto Mono';
@@ -616,7 +652,8 @@ p.candycane {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px
+  font-size: 15px;
+  border-radius: 15px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */

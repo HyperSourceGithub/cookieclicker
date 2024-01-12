@@ -4,7 +4,12 @@ let grandmas = 0;
 let searchers = 0;
 let makers = 0;
 let universes = 0;
-
+let imageindex = 0;
+const imagesDisplayed = [
+  "Assets/cookie.png",
+  "Assets/cookie_vector.png",
+  "Assets/amogus.png"
+];
 
 function cookieClick() {
   cookies += 1;
@@ -122,7 +127,7 @@ function load() {
   document.getElementById('cursorCost').innerHTML = nextCost;
 }
 
-window.setInterval(function() {
+window.setInterval(function () {
   if (cursors > 0) {
     cursorClick(cursors);
   }
@@ -205,22 +210,20 @@ function applyCheat() {
 }
 
 // Add the keydown event listener to show the cheat input field
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function (event) {
   if (event.key === '`') {
     document.getElementById('cheatCodes').style.display = 'block';
   }
 });
 
 function swapImage() {
+  imageindex +=1;
   var imageDisplayed = document.getElementById('click');
-  if (imageDisplayed.src.match("Assets/cookie.png")) {
-    imageDisplayed.src = "Assets/amogus.png";
-  } else {
-    imageDisplayed.src = "Assets/cookie.png"
-  }
+  var imageNum = imageindex % imagesDisplayed.length;
+  imageDisplayed.src = imagesDisplayed[imageNum];
 }
 
-window.onload = function() {
+window.onload = function () {
   var flakes = [];
   var types = ['❄', '❅', '❆'];
   for (var i = 0, len = 240; i < len; i++) {
@@ -232,7 +235,7 @@ var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+  coll[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
     if (content.style.maxHeight) {
