@@ -5,6 +5,7 @@ let searchers = 0;
 let makers = 0;
 let universes = 0;
 let imageindex = 0;
+
 const imagesDisplayed = [
   "Assets/cookie.png",
   "Assets/cookie_vector.png",
